@@ -254,4 +254,81 @@ Tambahkan CSS pada tag style untuk membuat tampilan form lebih menarik : <br>
 Ini adalah hasil refresh dari sintaks diatas :
 ![Gambar 8](screenshot/ss8.PNG) <br>
 
+## SOAL
+
+### Pertanyaan dan Tugas
+
+1. Buatlah form yang menampilkan dropdown menu dan listbox dengan multiple selection! <br>
+    Jawab : Berikut adalah sintaks nya : <br>
+```
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> DROPDOWN DAN LISTBOX HTML</title>
+        <style>
+            form input[type="submit"] {
+                border: 3px solid #197a43;
+                background-color: #197a43;
+                color: #fff;
+                font-weight: bold;
+                padding: 5px 15px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h2>Membuat Dropdown dan Listbox</h2>
+        </header>
+        <form action="proses.php" method="post">
+            <fieldset>
+                <legend>Data Mahasiswa</legend>
+                <p>
+                    <label for="nama">Nama</label>
+                    <input type="text" name="nama" id="nama">
+                </p>
+                <!-- Dropdown-->
+                <p>
+                    <label for="fakultas">Fakultas</label>
+                    <select name="fakultas" id="fakultas">
+                        <option value="" selected="selected"> -- PILIH FAKULTAS -- </option>
+                        <option value="teknik">Teknik</option>
+                        <option value="ekonomiBisnis">Ekonomi dan Bisnis</option>
+                        <option value="pendidikan">Ilmu Pendidikan</option>
+                    </select>
+                </p>
+                <!-- Listbox-->
+                <p>
+                    <label for="prodi">Program Studi</label>
+                    <select name="prodi" id="prodi" multiple>
+                        <option value="teknikInformatika">Teknik Informatika</option>
+                        <option value="teknikIndustri">Teknik Industri</option>
+                        <option value="teknikLingkungan">Teknik Lingkungan</option>
+                        <option value="teknikSipil">Teknik Sipil</option>
+                        <option value="arsitektur">Arsitektur</option>
+                        <option value="manajemen">Manajemen</option>
+                        <option value="akuntansi">Akuntansi</option>
+                        <option value="bisnisDigital">Bisnis Digital</option>
+                    </select>
+                </p>
+                <p><input type="submit" value="Save"></p>
+            </fieldset>
+        </form>
+    </body>
+    </html>
+```
+<br>
+
+Ini adalah contoh dropdown dan listbox hasil dari sintaks diatas : <br>
+
+![Gambar 9](screenshot/ss9.PNG) <br>
+
+![Gambar 10](screenshot/ss10.PNG) <br>
+
+
+
+
+
 
