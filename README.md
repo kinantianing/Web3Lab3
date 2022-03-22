@@ -135,7 +135,7 @@ Lalu tambahkan sintaks dibawah ini pada tag <body> untuk membuat tabel : <br>
 ```
 <br>
 
-Ini adalah hasil refresh dari sintaks diatas :
+Ini adalah hasil dari sintaks diatas :
 ![Gambar 4](screenshot/ss4.PNG) <br>
 
 ### 2. Mengatur Margin dan Padding
@@ -180,5 +180,78 @@ Gunakan atribut rowspan dan colspan untuk menggabungkan baris dan kolom : <br>
 
 Ini adalah hasil refresh dari sintaks diatas :
 ![Gambar 6](screenshot/ss6.PNG) <br>
+
+## C. Membuat Form
+### 1. Membuat File HTML
+Buatlah dokumen HTML seperti contoh dibawah ini : <br>
+```
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML FORM</title>
+    </head>
+    <body>
+        <header>
+            <h1>Membuat Form</h1>
+        </header>
+    </body>
+    </html>
+```
+<br>
+
+Lalu tambahkan sintaks dibawah ini pada tag <body> untuk membuat form sederhana : <br>
+```
+   <form action="proses.php" method="post">
+        <fieldset>
+            <legend>Data Pelanggan</legend>
+            <p>
+                <label for="nama">Nama</label>
+                <input type="text" name="nama" id="nama">
+            </p>
+            <p>
+                <label for="alamat">Alamat</label>
+                <textarea name="alamat" id="alamat" cols="20" rows="3"></textarea>
+            </p>
+            <p>
+                <label>Jenis Kelamin</label>
+                <input name="Kelamin" id="jk_l" type="radio" value="L"><label for="jk_l">Laki-Laki</label>
+                <input name="Kelamin" id="jk_p" type="radio" value="P"><label for="jk_p">Perempuan</label>
+            </p>
+            <p><input type="submit" value="Login"></p>
+        </fieldset>
+    </form>
+```
+<br>
+
+Ini adalah hasil dari sintaks diatas :
+![Gambar 7](screenshot/ss7.PNG) <br>
+
+### 2. Menambahkan Style pada Form
+Tambahkan CSS pada tag style untuk membuat tampilan form lebih menarik : <br>
+```
+   <style>
+        form p > label {
+            display: inline-block;
+            width: 100px;
+        }
+        form input[type="text"], form textarea {
+            border: 1px solid #197a43;
+        }
+        form input[type="submit"] {
+            border: 3px solid #197a43;
+            background-color: #197a43;
+            color: #fff;
+            font-weight: bold;
+            padding: 5px 15px;
+        }
+    </style>
+```
+<br>
+
+Ini adalah hasil refresh dari sintaks diatas :
+![Gambar 8](screenshot/ss8.PNG) <br>
 
 
