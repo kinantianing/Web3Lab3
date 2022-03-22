@@ -323,7 +323,7 @@ Ini adalah hasil refresh dari sintaks diatas :
 
 Ini adalah contoh dropdown dan listbox hasil dari sintaks diatas : <br>
 
-![Gambar 9](screenshot/ss9.PNG) <br>
+![Gambar 9](screenshot/ss9.png) <br>
 
 ![Gambar 10](screenshot/ss10.PNG) <br>
 
