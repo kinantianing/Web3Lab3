@@ -58,7 +58,7 @@ Tambahkan sintaks dibawah pada tag <body> untuk membuat unordered list : <br>
 ```
 <br>
 
-Ini adalah hasil dari sintaks diatas :
+Ini adalah hasil refresh dari sintaks diatas :
 ![Gambar 2](screenshot/ss2.PNG) <br>
 
 ### 3. Membuat Description List
@@ -80,9 +80,105 @@ Tambahkan sintaks dibawah pada tag <body> untuk membuat description list : <br>
 ```
 <br>
 
-Ini adalah hasil dari sintaks diatas :
+Ini adalah hasil refresh dari sintaks diatas :
 ![Gambar 3](screenshot/ss3.PNG) <br>
 
+## B. Membuat Tabel
+### 1. Membuat File HTML
+Buatlah dokumen HTML seperti contoh dibawah ini : <br>
+```
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML LANJUTAN</title>
+    </head>
+    <body>
+        <header>
+            <h1>Membuat Tabel</h1>
+        </header>
+    </body>
+    </html>
+```
+<br>
 
+Lalu tambahkan sintaks dibawah ini pada tag <body> untuk membuat tabel : <br>
+```
+   <table border="1" cellpadding="4" cellspacing="0">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Fakultas</th>
+                <th>Program Studi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td>Teknik</td>
+                <td>Teknik Informatika</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Teknik</td>
+                <td>Teknik Industri</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Teknik</td>
+                <td>Teknik Lingkungan</td>
+            </tr>
+        </tbody>
+    </table>
+```
+<br>
+
+Ini adalah hasil refresh dari sintaks diatas :
+![Gambar 4](screenshot/ss4.PNG) <br>
+
+### 2. Mengatur Margin dan Padding
+Tambahkan atribut cellpadding dan cellspacing untuk mengatur margin dan padding pada cell data : <br>
+```
+   <table border="1" cellpadding="6" cellspacing="0">
+```
+<br>
+
+Ini adalah hasil refresh dari sintaks diatas :
+![Gambar 5](screenshot/ss5.PNG) <br>
+
+### 3. Menggabungkan Sel Data
+Gunakan atribut rowspan dan colspan untuk menggabungkan baris dan kolom : <br>
+```
+  <table border="1" cellpadding="6" cellspacing="0">
+        <thead>
+            <tr>
+                <th>No.</th>
+                <th>Fakultas</th>
+                <th>Program Studi</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1.</td>
+                <td rowspan="3">Teknik</td>
+                <td>Teknik Informatika</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>Teknik Industri</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>Teknik Lingkungan</td>
+            </tr>
+        </tbody>
+    </table>
+```
+<br>
+
+Ini adalah hasil refresh dari sintaks diatas :
+![Gambar 6](screenshot/ss6.PNG) <br>
 
 
